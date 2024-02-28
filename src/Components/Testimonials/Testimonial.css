@@ -1,0 +1,85 @@
+.container{
+    width: 85%;
+    margin: 2% auto;
+    text-align: center;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.test-top{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.testimonial h2{
+    font-size: 2rem;
+}
+.test-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#test-icon{
+    color: red;
+}
+.gap1{
+    gap: 20px;
+}
+.gap2{
+    gap: 15px;
+}
+.small-header{
+    width: 49%;
+    margin: 0 auto;
+}
+.test-card-container{
+    display: flex;
+    gap: 26px;
+   
+}
+.test-card{
+    background-color: #363535a1;
+    padding: 4rem 3rem;
+    position: relative;
+}
+#quote-icon{
+    font-size: 2.5rem;
+    z-index: -1;
+    color: rgba(128, 128, 128, 0.773);
+}
+.test-card img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border: 2px solid grey;
+}
+.left{
+    text-align: left;
+}
+.test-card span{
+    font-size: 2rem;
+    color: grey;
+}
+.position{
+    position: absolute;
+    top: 37px;
+    left: 21px;
+}
+.auth-com{
+    display: flex;
+    margin-top: 2rem;
+    gap: 20px;
+    text-align: left;
+}
+@media(max-width:50rem){
+    .test-card-container{
+        flex-wrap: wrap;
+    }
+    .small-header{
+        width: 80%;
+    }
+}

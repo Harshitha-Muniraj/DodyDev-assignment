@@ -1,0 +1,25 @@
+.video{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.video figure{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.video img{
+    width: 80%;
+    
+    object-fit: contain;
+    border-top: 6px solid red;
+
+}
+.video-btm-text{
+    position: absolute;
+    top: 40%;
+    left: 27%;
+}

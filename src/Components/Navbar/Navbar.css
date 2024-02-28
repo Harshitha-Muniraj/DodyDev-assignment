@@ -1,0 +1,164 @@
+nav{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    
+}
+h1{
+    font-size: 2.5rem;
+    
+}
+.title{
+    color: #EC3737;
+}
+nav li p{
+    text-transform: uppercase;
+}
+nav ul {
+    display: flex;
+    gap: 35px;
+}
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    
+    font-size: 0.9rem;
+    padding-bottom:10px ;
+}
+nav ul li:hover{
+    border-bottom:1px solid #EC3737;
+}
+nav ul li span{
+    padding-top: 5px;
+}
+.nav-right{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    
+}
+.nav-call{
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%;
+   background-color: #EC3737;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#nav-call{
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-ryt-icon{
+    font-size: 1.2rem;
+}
+nav .nav-right button{
+    background-color: #EC3737;
+    border: none;
+    color: white;
+    height: 3rem;
+    padding: 3px 18px;
+    
+    display: flex;
+    align-items: center;
+    gap: 7px
+}
+.btn-mobile-nav{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    
+}
+#icon-mobile-nav{
+    height: 4.8rem;
+    width: 4.8rem;
+    color: white;
+   z-index: 999;
+}
+#icon-mobile-nav[name='close-outline']{
+    display: none;
+}
+.show-class{
+    display: none;
+}
+.drop-position{
+    position: relative;
+    
+}
+.dropdown{
+    position: absolute;
+    top: 50px;
+}
+.hov-btn{
+    transition: 0.3s;
+}
+.hov-btn:hover{
+   border: 2px solid #EC3737;
+   background-color: #0c0d0e;
+
+}
+@media (max-width:62rem){
+    html {
+        font-size: 62.5%;
+    }
+    body {
+        font-size: 1.6rem;
+    }
+    .navbar{
+        padding: 2rem 0rem;
+        width: 90%;
+    }
+    .btn-mobile-nav{
+        display: block;
+        display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    }
+    .navlist{
+        background-color: black;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        flex-direction: column;
+        
+        transition: all 0.5s ease-in;
+        z-index: 1;
+    }
+    .resp-hide{
+        display: none;
+        z-index: 999;
+    }
+    nav ul{
+        gap: 15px;
+    }
+    .nav-right{
+        position: relative;
+    }
+    .nav-call{
+        position: absolute;
+    left: 30px;
+    top: -10px;
+    }
+    #nav-btn{
+        display: none;
+    }
+    
+}
