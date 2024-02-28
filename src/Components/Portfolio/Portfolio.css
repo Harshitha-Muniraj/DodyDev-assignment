@@ -20,15 +20,17 @@
 .border{
     border:2px solid grey
 }
+.portfolio-left,.pic-container{
+    transition: 0.6s;
+}
 .portfolio-left:hover,.pic-container:hover{
     border:2px solid red;
-    
-
     text-align: left;
     left: 0px;
     right: 0;
-   
-    
+}
+.pic-info:hover{
+    padding-bottom: 3rem;
 }
 .portfolio-right{
     display: grid;
@@ -58,9 +60,7 @@
     justify-content: flex-end;
     padding: 0 0 2rem 2rem;
     text-align: left;
-   
-
-    text-align: left;
+   transition: 0.6s;
     left: 0px;
     right: 0;
 

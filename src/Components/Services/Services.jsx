@@ -18,15 +18,15 @@ const Services = () => {
             Data.map((item)=>{
                 return(
                    
-                    <div id={item.id} className='service-card'>
+                    <div id={item.id} className={`service-card`}>
                     <img src={item.image} />
-                    <div className='overlay' >
+                    <div className={`overlay ${item.class}`} >
                         <div className='service-icon'>{item.icon}</div>
                         <div className='service-header'>
                         <p className='bold service-head-font'>{item.topic}</p>
                         <p className='g-color'>{item.desc}</p>
                         </div>
-                        <p>SERVICE DETAILS</p>
+                        <p className='service-btm'>SERVICE DETAILS</p>
                     </div>
                     </div>
                     

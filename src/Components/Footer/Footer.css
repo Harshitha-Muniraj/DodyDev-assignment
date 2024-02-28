@@ -35,10 +35,15 @@ footer{
 .bold{
     font-weight: 600;
 }
+
 #icon{
     color: #EC3737;
     font-size: 1.3rem;
     z-index: -9;
+    cursor: pointer;
+}
+#icon:hover{
+    color: #fff;
 }
 .footer-cnt{
     display: flex;
@@ -59,6 +64,9 @@ footer ul{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.cursor{
+    cursor: pointer;
 }
 .sign-font{
     font-size: 0.95rem;
@@ -81,6 +89,9 @@ footer button{
     background-color: #EC3737;
     outline: none;
     border: navajowhite;
+}
+.foot-cnt:hover{
+color: beige;
 }
 #email-icon{
     color: white;

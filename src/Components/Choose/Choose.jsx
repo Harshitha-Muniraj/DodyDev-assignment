@@ -21,6 +21,7 @@ const Choose = () => {
         
     ]
     const topic={
+        topic:"WHY CHOOSE US",
         heading:"Crafting experiences, delivering success.",
         para:"Our commitment to quality and excellence is unparalleled. From the first brainstorming session to the final product delivery, we ensure that every step of the process is executed to perfection. You are not just getting a service; you are getting a partner who is committed to your growth and success."
     }
@@ -30,13 +31,14 @@ const Choose = () => {
   return (
     <section className='choose'>
     <SubHeader2 data={data} topic={topic} specificClass={"choose-specific"}/>
-   
-    <div className='choose-right' ref={parallax.ref} >
-    
-    <figure>
+   <div className='choose-right'  >
+    <figure ref={parallax.ref}>
             <img src='https://www.shutterstock.com/image-photo/people-sitting-around-table-drinking-260nw-196839866.jpg'/>
-        </figure>
-   
+    </figure>
+   <div className='rot-btm' data-aos="fade-right">
+    <p className='bold font-rot'>800+</p>
+    <p>HAPPY CLIENTS</p>
+   </div>
         
     </div>
     

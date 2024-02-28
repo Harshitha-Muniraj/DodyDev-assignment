@@ -1,6 +1,6 @@
 .video{
     width: 70%;
-    margin: 0 auto;
+    margin: 15% auto 5%;
     
 }
 .video figure{
@@ -15,11 +15,16 @@
     width: 80%;
     
     object-fit: contain;
-    border-top: 6px solid red;
+    border-top: 6px solid #EC3737;;
 
 }
 .video-btm-text{
     position: absolute;
     top: 40%;
     left: 27%;
+}
+.video-btm-text div{
+    font-size: 3rem;
+    text-align: center;
+    color: #EC3737;;
 }

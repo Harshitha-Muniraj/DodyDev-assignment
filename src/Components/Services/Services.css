@@ -29,11 +29,24 @@
     opacity: 0.6;
   
 }
+.hov-red-bg{
+    opacity: 1;
+    background-color: #EC3737; 
+}
 .overlay:hover{
    
     background-color: #EC3737;
-    opacity: 1;
-} 
+    
+}
+
+.service-btm{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.hov-red-bg:hover{
+    background-color: transparent;
+}
+ 
 .overlay{
     position: absolute;
     padding: 4rem 3rem;

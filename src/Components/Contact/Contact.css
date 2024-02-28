@@ -1,6 +1,6 @@
 .contact{
     width: 85%;
-    margin: 0 auto;
+    margin: 5% auto;
 }
 .contact h2{
     font-size: 2.2rem;
@@ -36,14 +36,27 @@
     border: 1px solid grey;
     flex-wrap: wrap;
 }
+.card-ryt-btm-ryt:hover{
+background-color: #EC3737;
+}
+.card-ryt-btm img:hover{
+transform: scale(1.2);
+}
 .card-ryt figure{
     flex:1;
    
+}
+.card-ryt-btm{
+    overflow: hidden;
+}
+.card-ryt-btm:hover{
+    border: 1px solid #EC3737;
 }
 .contact figure img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 .font-1{
     font-size: 1.5rem;
@@ -74,7 +87,7 @@
 }
 .inp-form{
     width: 100%;
-    height: 2.3rem;
+    height: 2.9rem;
     
     background-color: #0c0d0e;
     border: none;

@@ -87,7 +87,7 @@ const Navbar = () => {
   ];
   return (
     <nav>
-      <h1 className="h-color bold">
+      <h1 className="h-color bold cursor">
         <span className="title">X</span>able
       </h1>
       <div>
@@ -110,7 +110,7 @@ const Navbar = () => {
         <div className="nav-call">
           <ion-icon name="call" id="nav-call"></ion-icon>
         </div>
-        <button className="h-color bold hov-btn" id='nav-btn'>
+        <button className="h-color bold hov-btn cursor" id='nav-btn'>
           <span>
             <ion-icon name="navigate" id="nav-ryt-icon"></ion-icon>
           </span>

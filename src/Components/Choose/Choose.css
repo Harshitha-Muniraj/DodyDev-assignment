@@ -5,9 +5,11 @@
 }
 .choose{
     width: 85%;
-    margin: 0 auto;
+    margin: 5% auto;
     display: flex;
-    gap:2rem
+    gap:2rem;
+    align-items: center;
+    justify-content: space-between;
 }
 .choose .card-left{
     padding: 3rem 1rem 1rem 1rem;
@@ -16,10 +18,34 @@
     padding: 3rem 8rem 4rem 1rem
 }
 .choose-right{
-    width: 48%;
+    height: 600px;
+    width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+.font-rot{
+    font-size: 1.3rem;
+}
+.rot-btm{
+    position: absolute;
+    color: white;
+    position: absolute;
+    color: white;
+    bottom: -30px;
+    left: 0;
+    background-color: #363535a1;
+    border-left: 8px solid #EC3737;
+    width: 9rem;
+    transform: rotate(5deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0px; */
+    padding: 10px;
+    text-align: center;
 }
 .choose-right figure{
     width: 100%;
@@ -36,7 +62,12 @@
 .choose-specific .card-left-head, .sb2-head{
     font-family: 600;
 }
-.choose-specific .card-left-sub ,.sb2-subhead{
+.icon-head-topic{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.choose-specific .card-left-sub ,.choose .sb2-subhead{
     color: grey;
 }
 @media(max-width:50rem){
@@ -47,8 +78,10 @@
         width: 100%;
     }
     .choose-right{
-        width: 85%;
+        width: 250px;
+        height: 250px;
         margin: 2% auto;
+      
     }
     .card-right,.card-left{
         padding: 2rem;

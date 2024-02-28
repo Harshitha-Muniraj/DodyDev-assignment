@@ -1,12 +1,15 @@
 import React from 'react'
 import "./Footer.css"
+import FootContact from './FooterContactUse/FootContact';
+
 const Footer = () => {
     const contact=[{id:1,icon:<ion-icon name="call"></ion-icon>,text:"(123)45678"},{id:1,icon:<ion-icon name="mail"></ion-icon>,text:"info@example"},{id:1,icon:<ion-icon name="location"></ion-icon>,text:"123 Queen Street,LA"},]
+    const useful=[{id:1,icon:<ion-icon name="chevron-forward-outline"></ion-icon>,text:"Support Center"},{id:1,icon:<ion-icon name="chevron-forward-outline"></ion-icon>,text:"Privacy Policy"},{id:1,icon:<ion-icon name="chevron-forward-outline"></ion-icon>,text:"Cookie Policy"},]
   return (
     <footer>
       <div className='footer-container'>
         <div style={{flex:"1.3"}} className='foot-left'>
-          <h3 className='h-color bold'>Xable</h3>
+          <h3 className='h-color bold cursor'><span className="title">X</span>able</h3>
           <p className='fl-b2'>
             Morbi leo risus, porta ac vestibulum at ero nulla non metus auctor
             fringilla.
@@ -18,36 +21,8 @@ const Footer = () => {
             <div><ion-icon name="logo-instagram" id="icon"></ion-icon></div>
           </div>
         </div>
-        <div style={{flex:"1"}} className='footer-cnt'>
-            <p className='h-color bold'>CONTACT INFO</p>
-            <ul>
-                {
-                  contact.map((item)=>{
-                    return(
-                        <li key={item.id}>
-                          <p>{item.icon}</p> 
-                          <p>{item.text}</p>
-                        </li>
-                    )
-                  })
-                }
-            </ul>
-        </div>
-        <div style={{flex:"1"}} className='footer-cnt'>
-        <p className='h-color bold' >USEFUL INFO</p>
-            <ul>
-                {
-                  contact.map((item)=>{
-                    return(
-                        <li key={item.id}>
-                          <p>{item.icon}</p> 
-                          <p>{item.text}</p>
-                        </li>
-                    )
-                  })
-                }
-            </ul>
-        </div>
+        <FootContact contact={contact}/>
+        <FootContact contact={useful}/>
         <div style={{flex:"1.5"}} className='foot-newsletter'>
           <p className='h-color bold'>SUBSCRIBE TO OUR NEWSLETTER</p>
           <p className='sign-font'>
@@ -55,7 +30,7 @@ const Footer = () => {
           </p>
           <div className='foot-email'>
             <input placeholder="Email Address" />
-            <button><ion-icon name="send" id='email-icon'></ion-icon></button>
+            <button className='cursor'><ion-icon name="send" id='email-icon'></ion-icon></button>
           </div>
         </div>
       </div>

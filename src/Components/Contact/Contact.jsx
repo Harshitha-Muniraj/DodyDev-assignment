@@ -1,8 +1,14 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import './Contact.css';
 
 
 const Contact = () => {
+  const [items,SetItem]=useState({});
+
+  function handleChange(e){
+    SetItem({...items,[e.target.name]:e.target.value})
+  }
+
  
   return (
     <>
@@ -15,6 +21,7 @@ const Contact = () => {
         </div>
         <div className='card-ryt-btm'>
             <figure>
+            
                 <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK6zQleGetassoMtFpr8DeCXlOIT2DD9kNGQgHGkPO2unwBAIbeFnLWz9lKA&s' alt='advisor pic'/>
             </figure>
             <div className='card-ryt-btm-ryt'>
@@ -26,28 +33,28 @@ const Contact = () => {
         <form className='single-card'>
         <div className='cnt-form'>
           <div className='inp-box'>
-            <label htmlFor='name' className=' g-color bold font-size-form'>NAME</label>
-            <input type='text' value="" id='name' className='inp-form' />
+            <label htmlFor='name' className=' g-color bold font-size-form' >NAME</label>
+            <input type='text'name="name" value="" id='name'  className='inp-form' onChange={handleChange} />
           </div>
           <div className='inp-box'>
             <label htmlFor='number' className=' g-color bold font-size-form'>PHONE NUMBER</label>
-            <input type='text' value="" id='number' className='inp-form' />
+            <input type='text' name='phone' value="" id='number' className='inp-form' onChange={handleChange} />
           </div>
           <div className='inp-box'>
             <label htmlFor='email' className=' g-color bold font-size-form'>EMAIL ADDRESS</label>
-            <input type="email" value="" id='email' className='inp-form' />
+            <input type="email" name='email' value="" id='email' className='inp-form' onChange={handleChange}/>
           </div>
           <div className='inp-box '>
             <label htmlFor='service' className=' g-color bold font-size-form'>REQUIRED SERVICE</label>
-            <input type='text' value="" id='service' className='inp-form' />
+            <input type='text' name='service' value="" id='service' className='inp-form' onChange={handleChange}/>
           </div>
         </div>
         <div className='placeholder'>
            <label htmlFor='form-msg ' className=' g-color bold font-size-form'>PROJECT DETAILS</label>
-           <textarea name='message' id='form-msg' cols="30" rows="6"/>
+           <textarea name='message' id='form-msg' cols="30" rows="6" onChange={handleChange}/>
         </div>
           
-          <button type='submit' className='h-color bold hov-btn'>GET FREE QUOTE</button>
+          <button type='submit' className='h-color bold hov-btn cursor'>GET FREE QUOTE</button>
         </form>
       </div>
       

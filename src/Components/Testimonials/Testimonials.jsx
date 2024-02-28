@@ -14,7 +14,7 @@ const Testimonials = () => {
             <p className='g-color small-header'>Our clients share their experiences of transformation and growth. Unfiltered feedback and the true testament to our service quality.</p>
         </div>
       </div>
-      <div className='test-card-container'>
+      <div className='test-card-container' data-aos="fade-up">
         {
             Data.map((item)=>{
                 return(

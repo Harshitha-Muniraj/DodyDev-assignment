@@ -22,6 +22,9 @@
 
 
 }
+#color-red{
+    color:#EC3737
+}
 .hero-top1{
     display: flex;
     gap: 20px;
@@ -52,6 +55,7 @@
 }
 .left-btm-ryt{
     font-size: 0.85rem;
+    border-bottom: 1px solid #EC3737;
 }
 @media(max-width:785px){
     .hero-left{
