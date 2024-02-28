@@ -72,3 +72,10 @@
         font-size: 3rem;
     }
 }
+@media(max-width:35rem){
+    .hero-left-btm{
+        flex-direction: column;
+    gap: 20px;
+
+    }
+}
